@@ -2,7 +2,7 @@
 
 Name: sugar-read-activity
 Version: 63
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Read activity for Sugar
 License: GPL
 Group: Graphical desktop/Other
@@ -10,8 +10,11 @@ Url: http://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Read/Read-63.tar.bz2
 
+Patch: sugar-read-activity-63-sugar-351.patch
+
 Requires: sugar-toolkit >= 0.83.6
-Requires: python-evince >= 2.24.1
+Requires: evince >= 2.24.1
+Requires: gnome-python-evince >= 2.25.90
 
 BuildRequires: sugar-toolkit >= 0.83.6
 BuildRequires: gettext  
@@ -24,7 +27,7 @@ Read activity for Sugar
 
 %prep
 %setup -q -n Read-63
-
+%patch -p1
 
 %build
 python  \
