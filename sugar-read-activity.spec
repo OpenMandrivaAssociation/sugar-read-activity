@@ -14,10 +14,10 @@ Patch: sugar-read-activity-65-sugar-703.patch
 
 Requires: evince >= 2.25.90
 Requires: gnome-python-evince >= 2.25.90
-Requires: sugar-toolkit >= 0.84.2
+Requires: sugar-toolkit >= 0.84.0
 
 BuildRequires: gettext  
-BuildRequires: sugar-toolkit >= 0.84.2
+BuildRequires: sugar-toolkit >= 0.84.0
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
