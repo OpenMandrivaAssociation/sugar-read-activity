@@ -2,7 +2,7 @@
 
 Name: sugar-read-activity
 Version: 70
-Release: %mkrel 2
+Release: %mkrel 3
 Summary: Read activity for Sugar
 License: GPL
 Group: Graphical desktop/Other
@@ -39,6 +39,7 @@ python setup.py build
 rm -rf %{buildroot}
 python setup.py install --prefix=%{buildroot}/%{_prefix}
 find %{buildroot} -name '*.py.orig' -print0 | xargs -0 rm -f
+rm -rf %{buildroot}/%{_datadir}/sugar/activities/*/epubview/modules
 %find_lang org.laptop.sugar.ReadActivity
 
 %clean
