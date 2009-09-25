@@ -2,24 +2,24 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-read-activity
-Version: 74
+Version: 75
 Release: %mkrel 1
 Summary: Read activity for Sugar
 License: GPL
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
-Source: http://download.sugarlabs.org/sources/sucrose/fructose/Read/Read-74.tar.bz2
+Source: http://download.sugarlabs.org/sources/sucrose/fructose/Read/Read-75.tar.bz2
 
 Requires: python-beautifulsoup  
 Requires: evince >= 2.26.0
 Requires: gnome-python-evince >= 2.26.0
 Requires: python-lxml  
 Requires: python-webkitgtk  
-Requires: sugar-toolkit >= 0.85.8
+Requires: sugar-toolkit >= 0.86.0
 
 BuildRequires: gettext  
-BuildRequires: sugar-toolkit >= 0.85.8
+BuildRequires: sugar-toolkit >= 0.86.0
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
@@ -28,7 +28,7 @@ BuildArch: noarch
 Read activity for Sugar
 
 %prep
-%setup -q -n Read-74
+%setup -q -n Read-75
 
 
 %build
