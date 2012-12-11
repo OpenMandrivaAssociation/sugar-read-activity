@@ -51,3 +51,54 @@ rm -rf %{buildroot}
 %{_datadir}/sugar/activities/*
 %doc AUTHORS COPYING
 
+
+
+%changelog
+* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 78-2mdv2011.0
++ Revision: 615037
+- the mass rebuild of 2010.1 packages
+
+* Sun Apr 04 2010 Aleksey Lim <alsroot@mandriva.org> 78-1mdv2010.1
++ Revision: 531173
+- Sucrose 0.88.0 release
+
+* Mon Oct 12 2009 Aleksey Lim <alsroot@mandriva.org> 76-1mdv2010.0
++ Revision: 456980
+- Push 76
+
+* Fri Sep 25 2009 Aleksey Lim <alsroot@mandriva.org> 75-1mdv2010.0
++ Revision: 449008
+- Update to 75
+
+* Sat Sep 19 2009 Aleksey Lim <alsroot@mandriva.org> 74-1mdv2010.0
++ Revision: 444548
+- Update to 74
+
+* Tue Aug 11 2009 Aleksey Lim <alsroot@mandriva.org> 70-3mdv2010.0
++ Revision: 415104
+- Sucrose 0.85.2
+
+* Mon Apr 06 2009 Aleksey Lim <alsroot@mandriva.org> 65-2mdv2009.1
++ Revision: 364279
+- SL#703 fix
+
+* Wed Mar 04 2009 Aleksey Lim <alsroot@mandriva.org> 65-1mdv2009.1
++ Revision: 348320
+- Sucrose 0.84.0 release
+
+* Mon Feb 23 2009 Aleksey Lim <alsroot@mandriva.org> 64-1mdv2009.1
++ Revision: 344236
+- Sucrose 0.83.6 release
+
+* Sun Feb 15 2009 Aleksey Lim <alsroot@mandriva.org> 63-2mdv2009.1
++ Revision: 340428
+- SL#351 AttributeError: 'module' object has no attribute 'evince_embed_init'
+
+* Tue Jan 20 2009 Aleksey Lim <alsroot@mandriva.org> 63-1mdv2009.1
++ Revision: 332008
+- new Sucrose 0.83.4 release
+
+* Sun Jan 11 2009 Aleksey Lim <alsroot@mandriva.org> 62-1mdv2009.1
++ Revision: 328410
+- initial commit
+
