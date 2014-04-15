@@ -13,9 +13,9 @@ Source: http://download.sugarlabs.org/sources/sucrose/fructose/Read/Read-%{versi
 
 Requires: python-beautifulsoup  
 Requires: evince >= 2.26.0
-Requires: gnome-python-evince >= 2.26.0
 Requires: python-lxml  
 Requires: python-webkitgtk  
+Requires: python-gi
 Requires: sugar-toolkit-gtk3 >= 0.88.0
 
 BuildRequires: gettext  
