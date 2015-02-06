@@ -3,7 +3,7 @@
 
 Name: sugar-read-activity
 Version: 113
-Release: 1
+Release: 2
 Summary: Read activity for Sugar
 License: GPL
 Group: Graphical desktop/Other
