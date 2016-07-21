@@ -2,8 +2,8 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name: sugar-read-activity
-Version: 113
-Release: 2
+Version: 117
+Release: 1
 Summary: Read activity for Sugar
 License: GPL
 Group: Graphical desktop/Other
@@ -13,15 +13,14 @@ Source: http://download.sugarlabs.org/sources/sucrose/fructose/Read/Read-%{versi
 
 Requires: python-beautifulsoup  
 Requires: evince >= 2.26.0
-Requires: python-lxml  
-Requires: python-webkitgtk  
-Requires: python-gi
+Requires: python2-lxml  
+Requires: typelib(WebKit)  
+Requires: python2-gi
 Requires: sugar-toolkit-gtk3 >= 0.88.0
 
 BuildRequires: gettext  
 BuildRequires: sugar-toolkit-gtk3 >= 0.88.0
 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
 
 %description
@@ -37,17 +36,12 @@ rm -f MANIFEST
 python setup.py build
 
 %install
-rm -rf %{buildroot}
 python setup.py install --prefix=%{buildroot}/%{_prefix}
 find %{buildroot} -name '*.py.orig' -print0 | xargs -0 rm -f
 rm -rf %{buildroot}/%{_datadir}/sugar/activities/*/epubview/modules
 %find_lang org.laptop.sugar.ReadActivity
 
-%clean
-rm -rf %{buildroot}
-
 %files -f org.laptop.sugar.ReadActivity.lang
-%defattr(-,root,root,-)
 %{_datadir}/sugar/activities/*
 %doc AUTHORS COPYING
 
