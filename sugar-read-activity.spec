@@ -11,7 +11,7 @@ Url: http://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Read/Read-%{version}.tar.bz2
 
-Requires: python-beautifulsoup  
+Requires: python2-beautifulsoup  
 Requires: evince >= 2.26.0
 Requires: python2-lxml  
 Requires: typelib(WebKit)  
