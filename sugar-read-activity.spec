@@ -33,10 +33,10 @@ Read activity for Sugar
 %build
 
 rm -f MANIFEST
-python setup.py build
+python2 setup.py build
 
 %install
-python setup.py install --prefix=%{buildroot}/%{_prefix}
+python2 setup.py install --prefix=%{buildroot}/%{_prefix}
 find %{buildroot} -name '*.py.orig' -print0 | xargs -0 rm -f
 rm -rf %{buildroot}/%{_datadir}/sugar/activities/*/epubview/modules
 %find_lang org.laptop.sugar.ReadActivity
